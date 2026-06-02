@@ -29,7 +29,9 @@ And the scattering probability is `P_scattering = 1 − exp(−τ_scattering)`.
 
 At low X-ray energies, photoelectric absorption by ISM atoms (O, Ne, Fe) removes photons before they can form a halo. 
 
+```
 optical depth to photoelectric absorption = τ_(phot,ISM) = τ_absorption ≈ (2.4 × 10−22) * N_H * E_keV^-3
+```
 
 And the scattering probability is `P_absorption = 1 − exp(−τ_absorption)`.
 
@@ -46,7 +48,7 @@ The ratio of scattering to absorption optical depth scales as ≈ 0.35·E_keV²,
 | HI4PI column density | `NHI_HPX.fits` — [HI4PI Collaboration 2016, A&A 594, A116](https://www.aanda.org/articles/aa/abs/2016/10/aa29341-16/aa29341-16.html) | All-sky neutral hydrogen column density N_H in cm⁻², HEALPix NSIDE=1024 |
 | SFD dust map* | [Schlegel, Finkbeiner & Davis 1998](https://iopscience.iop.org/article/10.1086/305772) | E(B-V) reddening — used only for qualitative background plots, not quantitative analysis |
 
-*SFD dust map is optional*
+*SFD dust map is optional
 
 **You must download `NHI_HPX.fits` separately** from the HI4PI collaboration before running the notebook. Place it in the same directory as the notebook.
 
@@ -93,21 +95,21 @@ The notebook cells are labeled with one of three run conditions:
 
 **Each Section of Code:**
 
-1*. Cell 1.1 — imports
-2*. Cell 1.2 — set `TARGET_NSIDE = 1024`
-3**. Cells 2–4 — fetch GW events from GWOSC, filter for BBH
-4**. Cells 5–7 — find skymap URLs, download and extract (~5–15 min depending on connection)
-5. Cells 8-10 - test download by graphing 1 event
-6. Cell 11 - graphing bbh events
-7^. Cell 12 - graphing SFD dust map
-5*. Cell 13.1 — define `get_tau_scattering_and_absorption()`
-6. Cell 13.2-13.4 — compute and graph scattering and absorption probability maps
-7. Cell 14 — chunk skymaps and plot overlaid on probability maps
-8. Cells 15.1–15.3 — compute overlap percentages, save CSVs
-9. Cell 15.4 — compute probability of total failure
-* - absolutely necessary to run
-** - run if skymaps need to be downloaded
-^ - extra optional
+1*. Cell 1.1 — imports 
+2*. Cell 1.2 — set `TARGET_NSIDE = 1024` 
+3**. Cells 2–4 — fetch GW events from GWOSC, filter for BBH 
+4**. Cells 5–7 — find skymap URLs, download and extract (~5–15 min depending on connection) 
+5. Cells 8-10 - test download by graphing 1 event 
+6. Cell 11 - graphing bbh events 
+7^. Cell 12 - graphing SFD dust map 
+5*. Cell 13.1 — define `get_tau_scattering_and_absorption()` 
+6. Cell 13.2-13.4 — compute and graph scattering and absorption probability maps 
+7. Cell 14 — chunk skymaps and plot overlaid on probability maps 
+8. Cells 15.1–15.3 — compute overlap percentages, save CSVs 
+9. Cell 15.4 — compute probability of total failure 
+* - absolutely necessary to run 
+** - run if skymaps need to be downloaded 
+^ - extra optional 
 
 **To re-run from the middle** (skymaps already downloaded):
 
