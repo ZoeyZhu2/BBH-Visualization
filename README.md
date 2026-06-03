@@ -96,7 +96,7 @@ The notebook cells are labeled with one of three run conditions:
 **Each Section of Code:**
 
 1*. Cell 1.1 — imports 
-2*. Cell 1.2 — set `TARGET_NSIDE = 1024` 
+2*. Cell 1.2 — set `TARGET_NSIDE = 1024` which determines TOTAL_PIXELS
 3**. Cells 2–4 — fetch GW events from GWOSC, filter for BBH 
 4**. Cells 5–7 — find skymap URLs, download and extract (~5–15 min depending on connection) 
 5. Cells 8-10 - test download by graphing 1 event 
@@ -171,9 +171,10 @@ bbh_overlap_percentages_>0.1_scattering_probability_and_<0.5_absorption_probabil
 | Total GW events fetched | 391 |
 | BBH events (both masses > 3 M☉) | 273 |
 | BBH events with published skymaps | 167 |
-| Sky fraction with P_scatter ≥ 10% at 1 keV | 23.6% |
+| P(at least one success) excluding top event | 0.9999994 |
+<!-- | Sky fraction with P_scatter ≥ 10% at 1 keV | 23.6% | -->
 <!-- | Sky fraction with P_scatter ≥ 63% at 1 keV (τ > 1) | 0.6% |
-| Event with highest overlap (≥10% threshold) | GW200224_222234 — **100%** overlap, ~50 deg² localization |
+| Event with highest overlap with region of the sky with scattering probability >0.1 and absorption probability <0.5> |   GW200129_065458 — **59.8%** overlap |
 | P(at least one event overlaps high-scattering sky) | ≈ 1.0 (all 167 events) |
 | P(at least one success) excluding top event | 0.9999994 | -->
 <!-- 
