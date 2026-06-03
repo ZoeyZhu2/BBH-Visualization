@@ -107,6 +107,7 @@ The notebook cells are labeled with one of three run conditions:
 7. Cell 14 — chunk skymaps and plot overlaid on probability maps 
 8. Cells 15.1–15.3 — compute overlap percentages, save CSVs 
 9. Cell 15.4 — compute probability of total failure 
+
 * - absolutely necessary to run 
 ** - run if skymaps need to be downloaded 
 ^ - extra optional 
