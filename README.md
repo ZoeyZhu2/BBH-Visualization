@@ -215,3 +215,5 @@ This analysis treats each event independently and uses a simplified uniform grai
 <!-- - Use 3D dust maps (e.g., Bayestar19, Green et al. 2019) to account for dust distance along the line of sight -->
 <!-- - Weight by GW distance posterior to check whether the dust is actually between us and the source -->
 - Apply to future GWTC-5.0 events as they are released
+
+Created by Zoey Zhu zyz2000 June 2026
