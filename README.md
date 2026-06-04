@@ -154,12 +154,15 @@ scattering_and_absorption_probability_of_x-rays_E=2keV_scat_>0.1_absorp_<0.5.png
 bbh_chunk_1_at_2keV_with_>0.1_scattering_probability_and_<0.5_absorption_probability_with_overlay.png
 bbh_chunk_2_at_2keV_with_>0.1_scattering_probability_and_<0.5_absorption_probability_with_overlay.png
 ... (17 files)
-    Groups of 10 events overlaid on the dust/scattering background map.
+    Groups of 10 events overlaid on the scattering and absorption probability background map.
 
 bbh_overlap_percentages_>0.1_scattering_probability_and_<0.5_absorption_probability.csv
     Two-column CSVs: event_name, overlap_percentage.
     Sorted descending by overlap percentage.
     These are the primary scientific outputs.
+
+top_10_overlap_bbh_events_90%_regions.png
+    Top 10 events with the most overlap with the scattering and absorption probability graph overlaid on the scattering and absorption probability background |
 ```
 
 ---
