@@ -3,7 +3,7 @@
 
 ## What This Project Does
 
-This notebook identifies graphs sky localization regions of gravitational wave (GW) binary black hole (BBH) merger events and regions of high interstellar dust where X-ray scattering probability is greater than 0.1 and X-ray absorption probability is less than 0.5. The goal is to find candidate events where a detectable X-ray scattering halo could be used to pinpoint the source location far more precisely than the GW sky map alone.
+This notebook identifies graphs sky localization regions of gravitational wave (GW) binary black hole (BBH) merger events and regions of high interstellar dust where X-ray scattering probability is greater than 0.1 and X-ray absorption probability is less than 0.1. The goal is to find candidate events where a detectable X-ray scattering halo could be used to pinpoint the source location far more precisely than the GW sky map alone.
 
 ---
 
@@ -138,10 +138,10 @@ scattering_probability_of_x-rays_E=1keV_>=_0.1.png
 scattering_probability_of_x-rays_E=2keV_>=_0.1.png
     Full-sky grayscale map of X-ray scattering probability at E=2 keV.
     Darker = higher scattering probability. Concentrated along Galactic plane.
-absorption_probability_of_x-rays_E=2keV_<0.5.png
+absorption_probability_of_x-rays_E=2keV_<0.1.png
     Full-sky grayscale map of X-ray absorption probability at E=2 keV.
     Darker = lower absorption probability. Concentrated along Galactic plane.
-scattering_and_absorption_probability_of_x-rays_E=2keV_scat_>0.1_absorp_<0.5.png
+scattering_and_absorption_probability_of_x-rays_E=2keV_scat_>0.1_absorp_<0.1.png
     Full-sky grayscale map of X-ray absorption probability at E=2 keV.
     Darker = lower absorption probability. Concentrated along Galactic plane.
 
@@ -151,12 +151,12 @@ scattering_and_absorption_probability_of_x-rays_E=2keV_scat_>0.1_absorp_<0.5.png
     Per-year equirectangular sky maps showing all 90% credible regions,
     color-coded by event.
 
-bbh_chunk_1_at_2keV_with_>0.1_scattering_probability_and_<0.5_absorption_probability_with_overlay.png
-bbh_chunk_2_at_2keV_with_>0.1_scattering_probability_and_<0.5_absorption_probability_with_overlay.png
+bbh_chunk_1_at_2keV_with_>0.1_scattering_probability_and_<0.1_absorption_probability_with_overlay.png
+bbh_chunk_2_at_2keV_with_>0.1_scattering_probability_and_<0.1_absorption_probability_with_overlay.png
 ... (17 files)
     Groups of 10 events overlaid on the scattering and absorption probability background map.
 
-bbh_overlap_percentages_>0.1_scattering_probability_and_<0.5_absorption_probability.csv
+bbh_overlap_percentages_>0.1_scattering_probability_and_<0.1_absorption_probability.csv
     Two-column CSVs: event_name, overlap_percentage.
     Sorted descending by overlap percentage.
     These are the primary scientific outputs.
@@ -177,7 +177,7 @@ top_10_overlap_bbh_events_90%_regions.png
 | P(at least one success) excluding top event | 0.9999994 |
 <!-- | Sky fraction with P_scatter ≥ 10% at 1 keV | 23.6% | -->
 <!-- | Sky fraction with P_scatter ≥ 63% at 1 keV (τ > 1) | 0.6% |
-| Event with highest overlap with region of the sky with scattering probability >0.1 and absorption probability <0.5> |   GW200129_065458 — **59.8%** overlap |
+| Event with highest overlap with region of the sky with scattering probability >0.1 and absorption probability <0.1> |   GW200129_065458 — **59.8%** overlap |
 | P(at least one event overlaps high-scattering sky) | ≈ 1.0 (all 167 events) |
 | P(at least one success) excluding top event | 0.9999994 | -->
 <!-- 
