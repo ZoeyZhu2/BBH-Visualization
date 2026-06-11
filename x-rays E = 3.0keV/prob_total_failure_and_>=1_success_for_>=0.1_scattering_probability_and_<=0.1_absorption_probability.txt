@@ -1,0 +1,1 @@
+For the top 20 events:P(total failure) = 1.602548e-03P(at least one success) = 1 - 1.602548e-03  ≈ 0.9983974521  (via expm1)
