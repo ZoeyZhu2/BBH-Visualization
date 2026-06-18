@@ -241,7 +241,7 @@ All maps are resampled to NSIDE=1024 (pixel area ≈ 11.8 arcmin²) before any p
 - **Schlegel, Finkbeiner & Davis 1998**, ApJ 500, 525 — SFD dust map used for visual reference only.
 - **GWOSC** — Gravitational-Wave Open Science Center, https://gwosc.org — source of all GW event data and skymaps.
 - **GWTC-1, GWTC-2.1, GWTC-3, GWTC-4.0** — the four GW transient catalogs covering O1–O4a.
-- **Coutinho et al. 2022** — source of eROSITA eRASS1–4 survey window dates.
+- **Coutinho et al. 2022**, Proc. SPIE 12181, 2628946 — source of eROSITA eRASS1–4 survey window dates. https://doi.org/10.1117/12.2628946 — source of eROSITA eRASS1–4 survey window dates. 
 - **Mastroserio et al. 2021**, A&A 646, A83 — eROSITA detection of dust-scattering halo around MAXI J1348–630; used as validation source.
 
 ---
