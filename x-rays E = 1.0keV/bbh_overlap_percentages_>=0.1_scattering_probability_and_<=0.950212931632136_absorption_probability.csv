@@ -1,168 +1,168 @@
-event_name,overlap_percentage,overlap_boundary_file_x,overlap_boundary_file_y
-GW190720_000836,100.0,x-rays E = 1.0keV/overlap_boundaries/GW190720_000836_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190720_000836_boundary.json
-GW200208_130117,100.0,x-rays E = 1.0keV/overlap_boundaries/GW200208_130117_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200208_130117_boundary.json
-GW230811_032116,94.79,x-rays E = 1.0keV/overlap_boundaries/GW230811_032116_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230811_032116_boundary.json
-GW190521_074359,91.28,x-rays E = 1.0keV/overlap_boundaries/GW190521_074359_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190521_074359_boundary.json
-GW230825_041334,91.15,x-rays E = 1.0keV/overlap_boundaries/GW230825_041334_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230825_041334_boundary.json
-GW231005_021030,86.49,x-rays E = 1.0keV/overlap_boundaries/GW231005_021030_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231005_021030_boundary.json
-GW230922_040658,82.56,x-rays E = 1.0keV/overlap_boundaries/GW230922_040658_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230922_040658_boundary.json
-GW190727_060333,77.78,x-rays E = 1.0keV/overlap_boundaries/GW190727_060333_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190727_060333_boundary.json
-GW230624_113103,74.88,x-rays E = 1.0keV/overlap_boundaries/GW230624_113103_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230624_113103_boundary.json
-GW190930_133541,71.38,x-rays E = 1.0keV/overlap_boundaries/GW190930_133541_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190930_133541_boundary.json
-GW231118_005626,68.75,x-rays E = 1.0keV/overlap_boundaries/GW231118_005626_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231118_005626_boundary.json
-GW190828_065509,68.68,x-rays E = 1.0keV/overlap_boundaries/GW190828_065509_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190828_065509_boundary.json
-GW190707_093326,68.35,x-rays E = 1.0keV/overlap_boundaries/GW190707_093326_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190707_093326_boundary.json
-GW230609_064958,67.99,x-rays E = 1.0keV/overlap_boundaries/GW230609_064958_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230609_064958_boundary.json
-GW190513_205428,67.44,x-rays E = 1.0keV/overlap_boundaries/GW190513_205428_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190513_205428_boundary.json
-GW230729_082317,67.36,x-rays E = 1.0keV/overlap_boundaries/GW230729_082317_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230729_082317_boundary.json
-GW230927_043729,67.2,x-rays E = 1.0keV/overlap_boundaries/GW230927_043729_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230927_043729_boundary.json
-GW200302_015811,65.58,x-rays E = 1.0keV/overlap_boundaries/GW200302_015811_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200302_015811_boundary.json
-GW190910_112807,65.46,x-rays E = 1.0keV/overlap_boundaries/GW190910_112807_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190910_112807_boundary.json
-GW231004_232346,65.04,x-rays E = 1.0keV/overlap_boundaries/GW231004_232346_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231004_232346_boundary.json
-GW230605_065343,63.9,x-rays E = 1.0keV/overlap_boundaries/GW230605_065343_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230605_065343_boundary.json
-GW231206_233134,63.39,x-rays E = 1.0keV/overlap_boundaries/GW231206_233134_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231206_233134_boundary.json
-GW230708_230935,62.42,x-rays E = 1.0keV/overlap_boundaries/GW230708_230935_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230708_230935_boundary.json
-GW191215_223052,62.34,x-rays E = 1.0keV/overlap_boundaries/GW191215_223052_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191215_223052_boundary.json
-GW190512_180714,61.73,x-rays E = 1.0keV/overlap_boundaries/GW190512_180714_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190512_180714_boundary.json
-GW190828_063405,60.43,x-rays E = 1.0keV/overlap_boundaries/GW190828_063405_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190828_063405_boundary.json
-GW190517_055101,59.41,x-rays E = 1.0keV/overlap_boundaries/GW190517_055101_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190517_055101_boundary.json
-GW230608_205047,59.26,x-rays E = 1.0keV/overlap_boundaries/GW230608_205047_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230608_205047_boundary.json
-GW230824_033047,58.86,x-rays E = 1.0keV/overlap_boundaries/GW230824_033047_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230824_033047_boundary.json
-GW231223_075055,56.67,x-rays E = 1.0keV/overlap_boundaries/GW231223_075055_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231223_075055_boundary.json
-GW231018_233037,56.22,x-rays E = 1.0keV/overlap_boundaries/GW231018_233037_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231018_233037_boundary.json
-GW190725_174728,55.34,x-rays E = 1.0keV/overlap_boundaries/GW190725_174728_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190725_174728_boundary.json
-GW190929_012149,55.29,x-rays E = 1.0keV/overlap_boundaries/GW190929_012149_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190929_012149_boundary.json
-GW190803_022701,54.55,x-rays E = 1.0keV/overlap_boundaries/GW190803_022701_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190803_022701_boundary.json
-GW150914,54.48,x-rays E = 1.0keV/overlap_boundaries/GW150914_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW150914_boundary.json
-GW190408_181802,53.75,x-rays E = 1.0keV/overlap_boundaries/GW190408_181802_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190408_181802_boundary.json
-GW190926_050336,50.45,x-rays E = 1.0keV/overlap_boundaries/GW190926_050336_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190926_050336_boundary.json
-GW230723_101834,48.63,x-rays E = 1.0keV/overlap_boundaries/GW230723_101834_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230723_101834_boundary.json
-GW200308_173609,47.96,x-rays E = 1.0keV/overlap_boundaries/GW200308_173609_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200308_173609_boundary.json
-GW230820_212515,47.75,x-rays E = 1.0keV/overlap_boundaries/GW230820_212515_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230820_212515_boundary.json
-GW200316_215756,46.83,x-rays E = 1.0keV/overlap_boundaries/GW200316_215756_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200316_215756_boundary.json
-GW191109_010717,46.29,x-rays E = 1.0keV/overlap_boundaries/GW191109_010717_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191109_010717_boundary.json
-GW230805_034249,44.59,x-rays E = 1.0keV/overlap_boundaries/GW230805_034249_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230805_034249_boundary.json
-GW231118_090602,44.22,x-rays E = 1.0keV/overlap_boundaries/GW231118_090602_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231118_090602_boundary.json
-GW191113_071753,43.27,x-rays E = 1.0keV/overlap_boundaries/GW191113_071753_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191113_071753_boundary.json
-GW230924_124453,43.08,x-rays E = 1.0keV/overlap_boundaries/GW230924_124453_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230924_124453_boundary.json
-GW151012,42.45,x-rays E = 1.0keV/overlap_boundaries/GW151012_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW151012_boundary.json
-GW170823,42.31,x-rays E = 1.0keV/overlap_boundaries/GW170823_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW170823_boundary.json
-GW230803_033412,41.37,x-rays E = 1.0keV/overlap_boundaries/GW230803_033412_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230803_033412_boundary.json
-GW230831_015414,40.89,x-rays E = 1.0keV/overlap_boundaries/GW230831_015414_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230831_015414_boundary.json
-GW230702_185453,40.87,x-rays E = 1.0keV/overlap_boundaries/GW230702_185453_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230702_185453_boundary.json
-GW231014_040532,40.3,x-rays E = 1.0keV/overlap_boundaries/GW231014_040532_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231014_040532_boundary.json
-GW231029_111508,39.91,x-rays E = 1.0keV/overlap_boundaries/GW231029_111508_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231029_111508_boundary.json
-GW240109_050431,38.28,x-rays E = 1.0keV/overlap_boundaries/GW240109_050431_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW240109_050431_boundary.json
-GW231113_122623,38.16,x-rays E = 1.0keV/overlap_boundaries/GW231113_122623_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231113_122623_boundary.json
-GW230920_071124,38.15,x-rays E = 1.0keV/overlap_boundaries/GW230920_071124_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230920_071124_boundary.json
-GW230914_111401,38.04,x-rays E = 1.0keV/overlap_boundaries/GW230914_111401_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230914_111401_boundary.json
-GW200208_222617,37.31,x-rays E = 1.0keV/overlap_boundaries/GW200208_222617_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200208_222617_boundary.json
-GW230930_110730,36.97,x-rays E = 1.0keV/overlap_boundaries/GW230930_110730_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230930_110730_boundary.json
-GW200306_093714,36.97,x-rays E = 1.0keV/overlap_boundaries/GW200306_093714_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200306_093714_boundary.json
-GW191127_050227,36.81,x-rays E = 1.0keV/overlap_boundaries/GW191127_050227_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191127_050227_boundary.json
-GW231223_202619,36.56,x-rays E = 1.0keV/overlap_boundaries/GW231223_202619_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231223_202619_boundary.json
-GW231114_043211,36.29,x-rays E = 1.0keV/overlap_boundaries/GW231114_043211_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231114_043211_boundary.json
-GW151226,35.21,x-rays E = 1.0keV/overlap_boundaries/GW151226_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW151226_boundary.json
-GW230904_051013,35.0,x-rays E = 1.0keV/overlap_boundaries/GW230904_051013_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230904_051013_boundary.json
-GW190421_213856,34.81,x-rays E = 1.0keV/overlap_boundaries/GW190421_213856_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190421_213856_boundary.json
-GW190519_153544,34.13,x-rays E = 1.0keV/overlap_boundaries/GW190519_153544_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190519_153544_boundary.json
-GW230706_104333,33.41,x-rays E = 1.0keV/overlap_boundaries/GW230706_104333_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230706_104333_boundary.json
-GW191216_213338,33.2,x-rays E = 1.0keV/overlap_boundaries/GW191216_213338_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191216_213338_boundary.json
-GW200112_155838,32.67,x-rays E = 1.0keV/overlap_boundaries/GW200112_155838_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200112_155838_boundary.json
-GW191222_033537,32.52,x-rays E = 1.0keV/overlap_boundaries/GW191222_033537_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191222_033537_boundary.json
-GW200128_022011,31.6,x-rays E = 1.0keV/overlap_boundaries/GW200128_022011_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200128_022011_boundary.json
-GW231119_075248,31.25,x-rays E = 1.0keV/overlap_boundaries/GW231119_075248_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231119_075248_boundary.json
-GW240104_164932,30.98,x-rays E = 1.0keV/overlap_boundaries/GW240104_164932_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW240104_164932_boundary.json
-GW231129_081745,30.94,x-rays E = 1.0keV/overlap_boundaries/GW231129_081745_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231129_081745_boundary.json
-GW200216_220804,30.78,x-rays E = 1.0keV/overlap_boundaries/GW200216_220804_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200216_220804_boundary.json
-GW231001_140220,30.63,x-rays E = 1.0keV/overlap_boundaries/GW231001_140220_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231001_140220_boundary.json
-GW231005_091549,29.64,x-rays E = 1.0keV/overlap_boundaries/GW231005_091549_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231005_091549_boundary.json
-GW200322_091133,29.26,x-rays E = 1.0keV/overlap_boundaries/GW200322_091133_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200322_091133_boundary.json
-GW230709_122727,29.11,x-rays E = 1.0keV/overlap_boundaries/GW230709_122727_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230709_122727_boundary.json
-GW230819_171910,29.08,x-rays E = 1.0keV/overlap_boundaries/GW230819_171910_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230819_171910_boundary.json
-GW231224_024321,28.84,x-rays E = 1.0keV/overlap_boundaries/GW231224_024321_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231224_024321_boundary.json
-GW231110_040320,28.51,x-rays E = 1.0keV/overlap_boundaries/GW231110_040320_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231110_040320_boundary.json
-GW190731_140936,28.03,x-rays E = 1.0keV/overlap_boundaries/GW190731_140936_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190731_140936_boundary.json
-GW231118_071402,27.91,x-rays E = 1.0keV/overlap_boundaries/GW231118_071402_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231118_071402_boundary.json
-GW230606_004305,27.2,x-rays E = 1.0keV/overlap_boundaries/GW230606_004305_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230606_004305_boundary.json
-GW190426_190642,27.19,x-rays E = 1.0keV/overlap_boundaries/GW190426_190642_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190426_190642_boundary.json
-GW231223_032836,27.18,x-rays E = 1.0keV/overlap_boundaries/GW231223_032836_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231223_032836_boundary.json
-GW230630_125806,27.08,x-rays E = 1.0keV/overlap_boundaries/GW230630_125806_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230630_125806_boundary.json
-GW231230_170116,27.02,x-rays E = 1.0keV/overlap_boundaries/GW231230_170116_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231230_170116_boundary.json
-GW231102_071736,26.92,x-rays E = 1.0keV/overlap_boundaries/GW231102_071736_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231102_071736_boundary.json
-GW231008_142521,26.41,x-rays E = 1.0keV/overlap_boundaries/GW231008_142521_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231008_142521_boundary.json
-GW240107_013215,26.03,x-rays E = 1.0keV/overlap_boundaries/GW240107_013215_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW240107_013215_boundary.json
-GW230927_153832,26.01,x-rays E = 1.0keV/overlap_boundaries/GW230927_153832_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230927_153832_boundary.json
-GW230707_124047,25.52,x-rays E = 1.0keV/overlap_boundaries/GW230707_124047_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230707_124047_boundary.json
-GW230601_224134,24.93,x-rays E = 1.0keV/overlap_boundaries/GW230601_224134_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230601_224134_boundary.json
-GW230704_212616,23.89,x-rays E = 1.0keV/overlap_boundaries/GW230704_212616_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230704_212616_boundary.json
-GW200220_124850,23.75,x-rays E = 1.0keV/overlap_boundaries/GW200220_124850_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200220_124850_boundary.json
-GW230814_061920,22.18,x-rays E = 1.0keV/overlap_boundaries/GW230814_061920_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230814_061920_boundary.json
-GW190925_232845,22.02,x-rays E = 1.0keV/overlap_boundaries/GW190925_232845_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190925_232845_boundary.json
-GW230919_215712,21.71,x-rays E = 1.0keV/overlap_boundaries/GW230919_215712_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230919_215712_boundary.json
-GW230726_002940,21.15,x-rays E = 1.0keV/overlap_boundaries/GW230726_002940_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230726_002940_boundary.json
-GW190514_065416,20.93,x-rays E = 1.0keV/overlap_boundaries/GW190514_065416_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190514_065416_boundary.json
-GW230806_204041,20.72,x-rays E = 1.0keV/overlap_boundaries/GW230806_204041_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230806_204041_boundary.json
-GW231231_154016,20.63,x-rays E = 1.0keV/overlap_boundaries/GW231231_154016_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231231_154016_boundary.json
-GW200225_060421,20.47,x-rays E = 1.0keV/overlap_boundaries/GW200225_060421_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200225_060421_boundary.json
-GW231127_165300,20.28,x-rays E = 1.0keV/overlap_boundaries/GW231127_165300_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231127_165300_boundary.json
-GW191204_171526,19.84,x-rays E = 1.0keV/overlap_boundaries/GW191204_171526_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191204_171526_boundary.json
-GW170729,19.03,x-rays E = 1.0keV/overlap_boundaries/GW170729_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW170729_boundary.json
-GW230814_230901,18.93,x-rays E = 1.0keV/overlap_boundaries/GW230814_230901_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230814_230901_boundary.json
-GW231113_200417,18.89,x-rays E = 1.0keV/overlap_boundaries/GW231113_200417_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231113_200417_boundary.json
-GW230911_195324,18.84,x-rays E = 1.0keV/overlap_boundaries/GW230911_195324_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230911_195324_boundary.json
-GW230928_215827,18.57,x-rays E = 1.0keV/overlap_boundaries/GW230928_215827_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230928_215827_boundary.json
-GW230704_021211,17.91,x-rays E = 1.0keV/overlap_boundaries/GW230704_021211_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230704_021211_boundary.json
-GW190620_030421,17.8,x-rays E = 1.0keV/overlap_boundaries/GW190620_030421_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190620_030421_boundary.json
-GW200220_061928,16.75,x-rays E = 1.0keV/overlap_boundaries/GW200220_061928_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200220_061928_boundary.json
-GW191103_012549,16.41,x-rays E = 1.0keV/overlap_boundaries/GW191103_012549_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191103_012549_boundary.json
-GW191204_110529,16.19,x-rays E = 1.0keV/overlap_boundaries/GW191204_110529_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191204_110529_boundary.json
-GW230708_053705,15.84,x-rays E = 1.0keV/overlap_boundaries/GW230708_053705_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230708_053705_boundary.json
-GW231221_135041,15.83,x-rays E = 1.0keV/overlap_boundaries/GW231221_135041_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231221_135041_boundary.json
-GW200129_065458,14.88,x-rays E = 1.0keV/overlap_boundaries/GW200129_065458_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200129_065458_boundary.json
-GW170608,14.5,x-rays E = 1.0keV/overlap_boundaries/GW170608_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW170608_boundary.json
-GW191126_115259,14.07,x-rays E = 1.0keV/overlap_boundaries/GW191126_115259_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191126_115259_boundary.json
-GW230712_090405,14.06,x-rays E = 1.0keV/overlap_boundaries/GW230712_090405_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230712_090405_boundary.json
-GW190602_175927,13.5,x-rays E = 1.0keV/overlap_boundaries/GW190602_175927_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190602_175927_boundary.json
-GW231020_142947,13.38,x-rays E = 1.0keV/overlap_boundaries/GW231020_142947_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231020_142947_boundary.json
-GW231108_125142,12.71,x-rays E = 1.0keV/overlap_boundaries/GW231108_125142_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231108_125142_boundary.json
-GW190413_134308,12.03,x-rays E = 1.0keV/overlap_boundaries/GW190413_134308_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190413_134308_boundary.json
-GW230630_234532,10.87,x-rays E = 1.0keV/overlap_boundaries/GW230630_234532_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230630_234532_boundary.json
-GW231213_111417,9.57,x-rays E = 1.0keV/overlap_boundaries/GW231213_111417_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231213_111417_boundary.json
-GW170104,9.16,x-rays E = 1.0keV/overlap_boundaries/GW170104_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW170104_boundary.json
-GW190527_092055,8.56,x-rays E = 1.0keV/overlap_boundaries/GW190527_092055_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190527_092055_boundary.json
-GW190728_064510,8.35,x-rays E = 1.0keV/overlap_boundaries/GW190728_064510_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190728_064510_boundary.json
-GW231104_133418,7.17,x-rays E = 1.0keV/overlap_boundaries/GW231104_133418_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231104_133418_boundary.json
-GW231226_101520,5.81,x-rays E = 1.0keV/overlap_boundaries/GW231226_101520_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231226_101520_boundary.json
-GW190403_051519,5.6,x-rays E = 1.0keV/overlap_boundaries/GW190403_051519_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190403_051519_boundary.json
-GW191230_180458,5.3,x-rays E = 1.0keV/overlap_boundaries/GW191230_180458_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191230_180458_boundary.json
-GW190706_222641,4.61,x-rays E = 1.0keV/overlap_boundaries/GW190706_222641_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190706_222641_boundary.json
-GW230627_015337,3.37,x-rays E = 1.0keV/overlap_boundaries/GW230627_015337_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230627_015337_boundary.json
-GW190708_232457,2.9,x-rays E = 1.0keV/overlap_boundaries/GW190708_232457_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190708_232457_boundary.json
-GW191129_134029,2.33,x-rays E = 1.0keV/overlap_boundaries/GW191129_134029_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191129_134029_boundary.json
-GW231028_153006,1.79,x-rays E = 1.0keV/overlap_boundaries/GW231028_153006_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231028_153006_boundary.json
-GW190719_215514,1.33,x-rays E = 1.0keV/overlap_boundaries/GW190719_215514_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190719_215514_boundary.json
-GW230628_231200,1.15,x-rays E = 1.0keV/overlap_boundaries/GW230628_231200_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230628_231200_boundary.json
-GW230731_215307,0.45,x-rays E = 1.0keV/overlap_boundaries/GW230731_215307_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230731_215307_boundary.json
-GW190630_185205,0.38,x-rays E = 1.0keV/overlap_boundaries/GW190630_185205_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190630_185205_boundary.json
-GW190521,0.24,x-rays E = 1.0keV/overlap_boundaries/GW190521_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190521_boundary.json
-GW190916_200658,0.1,x-rays E = 1.0keV/overlap_boundaries/GW190916_200658_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190916_200658_boundary.json
-GW231123_135430,0.04,x-rays E = 1.0keV/overlap_boundaries/GW231123_135430_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231123_135430_boundary.json
-GW170809,0.01,x-rays E = 1.0keV/overlap_boundaries/GW170809_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW170809_boundary.json
-GW200209_085452,0.01,x-rays E = 1.0keV/overlap_boundaries/GW200209_085452_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200209_085452_boundary.json
-GW191105_143521,0.01,x-rays E = 1.0keV/overlap_boundaries/GW191105_143521_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW191105_143521_boundary.json
-GW190503_185404,0.01,x-rays E = 1.0keV/overlap_boundaries/GW190503_185404_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190503_185404_boundary.json
-GW190805_211137,0.0,x-rays E = 1.0keV/overlap_boundaries/GW190805_211137_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190805_211137_boundary.json
-GW200202_154313,0.0,x-rays E = 1.0keV/overlap_boundaries/GW200202_154313_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200202_154313_boundary.json
-GW231206_233901,0.0,x-rays E = 1.0keV/overlap_boundaries/GW231206_233901_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW231206_233901_boundary.json
-GW190924_021846,0.0,x-rays E = 1.0keV/overlap_boundaries/GW190924_021846_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190924_021846_boundary.json
-GW170818,0.0,x-rays E = 1.0keV/overlap_boundaries/GW170818_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW170818_boundary.json
-GW190701_203306,0.0,x-rays E = 1.0keV/overlap_boundaries/GW190701_203306_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190701_203306_boundary.json
-GW200224_222234,0.0,x-rays E = 1.0keV/overlap_boundaries/GW200224_222234_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200224_222234_boundary.json
-GW190413_052954,0.0,x-rays E = 1.0keV/overlap_boundaries/GW190413_052954_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190413_052954_boundary.json
-GW170814,0.0,x-rays E = 1.0keV/overlap_boundaries/GW170814_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW170814_boundary.json
-GW230922_020344,0.0,x-rays E = 1.0keV/overlap_boundaries/GW230922_020344_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW230922_020344_boundary.json
-GW200311_115853,0.0,x-rays E = 1.0keV/overlap_boundaries/GW200311_115853_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200311_115853_boundary.json
-GW190915_235702,0.0,x-rays E = 1.0keV/overlap_boundaries/GW190915_235702_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190915_235702_boundary.json
-GW190412,0.0,x-rays E = 1.0keV/overlap_boundaries/GW190412_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW190412_boundary.json
-GW200219_094415,0.0,x-rays E = 1.0keV/overlap_boundaries/GW200219_094415_boundary.json,x-rays E = 1.0keV/overlap_boundaries/GW200219_094415_boundary.json
+event_name,overlap_percentage
+GW190720_000836,100.0
+GW200208_130117,100.0
+GW230811_032116,94.79
+GW190521_074359,91.28
+GW230825_041334,91.15
+GW231005_021030,86.49
+GW230922_040658,82.56
+GW190727_060333,77.78
+GW230624_113103,74.88
+GW190930_133541,71.38
+GW231118_005626,68.75
+GW190828_065509,68.68
+GW190707_093326,68.35
+GW230609_064958,67.99
+GW190513_205428,67.44
+GW230729_082317,67.36
+GW230927_043729,67.2
+GW200302_015811,65.58
+GW190910_112807,65.46
+GW231004_232346,65.04
+GW230605_065343,63.9
+GW231206_233134,63.39
+GW230708_230935,62.42
+GW191215_223052,62.34
+GW190512_180714,61.73
+GW190828_063405,60.43
+GW190517_055101,59.41
+GW230608_205047,59.26
+GW230824_033047,58.86
+GW231223_075055,56.67
+GW231018_233037,56.22
+GW190725_174728,55.34
+GW190929_012149,55.29
+GW190803_022701,54.55
+GW150914,54.48
+GW190408_181802,53.75
+GW190926_050336,50.45
+GW230723_101834,48.63
+GW200308_173609,47.96
+GW230820_212515,47.75
+GW200316_215756,46.83
+GW191109_010717,46.29
+GW230805_034249,44.59
+GW231118_090602,44.22
+GW191113_071753,43.27
+GW230924_124453,43.08
+GW151012,42.45
+GW170823,42.31
+GW230803_033412,41.37
+GW230831_015414,40.89
+GW230702_185453,40.87
+GW231014_040532,40.3
+GW231029_111508,39.91
+GW240109_050431,38.28
+GW231113_122623,38.16
+GW230920_071124,38.15
+GW230914_111401,38.04
+GW200208_222617,37.31
+GW230930_110730,36.97
+GW200306_093714,36.97
+GW191127_050227,36.81
+GW231223_202619,36.56
+GW231114_043211,36.29
+GW151226,35.21
+GW230904_051013,35.0
+GW190421_213856,34.81
+GW190519_153544,34.13
+GW230706_104333,33.41
+GW191216_213338,33.2
+GW200112_155838,32.67
+GW191222_033537,32.52
+GW200128_022011,31.6
+GW231119_075248,31.25
+GW240104_164932,30.98
+GW231129_081745,30.94
+GW200216_220804,30.78
+GW231001_140220,30.63
+GW231005_091549,29.64
+GW200322_091133,29.26
+GW230709_122727,29.11
+GW230819_171910,29.08
+GW231224_024321,28.84
+GW231110_040320,28.51
+GW190731_140936,28.03
+GW231118_071402,27.91
+GW230606_004305,27.2
+GW190426_190642,27.19
+GW231223_032836,27.18
+GW230630_125806,27.08
+GW231230_170116,27.02
+GW231102_071736,26.92
+GW231008_142521,26.41
+GW240107_013215,26.03
+GW230927_153832,26.01
+GW230707_124047,25.52
+GW230601_224134,24.93
+GW230704_212616,23.89
+GW200220_124850,23.75
+GW230814_061920,22.18
+GW190925_232845,22.02
+GW230919_215712,21.71
+GW230726_002940,21.15
+GW190514_065416,20.93
+GW230806_204041,20.72
+GW231231_154016,20.63
+GW200225_060421,20.47
+GW231127_165300,20.28
+GW191204_171526,19.84
+GW170729,19.03
+GW230814_230901,18.93
+GW231113_200417,18.89
+GW230911_195324,18.84
+GW230928_215827,18.57
+GW230704_021211,17.91
+GW190620_030421,17.8
+GW200220_061928,16.75
+GW191103_012549,16.41
+GW191204_110529,16.19
+GW230708_053705,15.84
+GW231221_135041,15.83
+GW200129_065458,14.88
+GW170608,14.5
+GW191126_115259,14.07
+GW230712_090405,14.06
+GW190602_175927,13.5
+GW231020_142947,13.38
+GW231108_125142,12.71
+GW190413_134308,12.03
+GW230630_234532,10.87
+GW231213_111417,9.57
+GW170104,9.16
+GW190527_092055,8.56
+GW190728_064510,8.35
+GW231104_133418,7.17
+GW231226_101520,5.81
+GW190403_051519,5.6
+GW191230_180458,5.3
+GW190706_222641,4.61
+GW230627_015337,3.37
+GW190708_232457,2.9
+GW191129_134029,2.33
+GW231028_153006,1.79
+GW190719_215514,1.33
+GW230628_231200,1.15
+GW230731_215307,0.45
+GW190630_185205,0.38
+GW190521,0.24
+GW190916_200658,0.1
+GW231123_135430,0.04
+GW170809,0.01
+GW200209_085452,0.01
+GW191105_143521,0.01
+GW190503_185404,0.01
+GW190805_211137,0.0
+GW200202_154313,0.0
+GW231206_233901,0.0
+GW190924_021846,0.0
+GW170818,0.0
+GW190701_203306,0.0
+GW200224_222234,0.0
+GW190413_052954,0.0
+GW170814,0.0
+GW230922_020344,0.0
+GW200311_115853,0.0
+GW190915_235702,0.0
+GW190412,0.0
+GW200219_094415,0.0
