@@ -1,5 +1,8 @@
-<!-- needs a lot of updating -->
+<!-- needs a lot of updating for visualization and search -->
 # BBH-Visualization
+
+
+Not up to date yet.
 
 ## What This Project Does
 
