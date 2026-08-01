@@ -1,16 +1,21 @@
-<!-- needs a lot of updating for visualization and search -->
 # BBH-Visualization
-
-
-Not up to date yet.
 
 ## What This Project Does
 
-This notebook identifies sky localization regions of gravitational wave (GW) binary black hole (BBH) merger events and overlaps them with regions of high interstellar dust where X-ray scattering probability is ≥0.1 and X-ray absorption probability is ≤~0.95 (optical depth τ = 3). The goal is to find candidate events where a detectable X-ray dust-scattering halo could help pinpoint the source location far more precisely than the GW sky map alone. For high-priority events, the notebook also computes when the eROSITA X-ray telescope scanned those regions relative to the GW detection time, enabling retrospective archival searches.
+This project identifies sky localization regions of gravitational wave (GW) binary black hole (BBH) merger events that overlap with regions of high interstellar dust where X-ray scattering probability is ≥0.1 and X-ray absorption probability is ≤~0.95 (optical depth τ = 3), then searches archival eROSITA X-ray images of the highest-priority regions for a detectable dust-scattering echo ("halo") that could pinpoint the merger's source location far more precisely than the GW sky map alone.
+
+The work is split across two notebooks:
+
+| Notebook | Role |
+|---|---|
+| **`bbh_visualization.ipynb`** | Candidate identification: computes the GW/dust overlap, ranks all 167 BBH events by overlap fraction, and determines when eROSITA scanned each high-priority region relative to its GW detection time. Outputs a boundary polygon (RA/Dec) per event for the favorable overlap region. |
+| **`bbh_search.ipynb`** | Archival image search: downloads the eROSITA skytile images covering each event's boundary polygon and searches them for a ring-shaped photon excess at the time-delay-predicted radius, using a direct photon-counting annulus search. Calibrated against the known dust-scattering halo of MAXI J1348–630. |
 
 ---
 
 ## Background
+
+The physical derivations below are worked out in full in two reference notes included in this repo: [`scattering_probability.pdf`](scattering_probability.pdf) (scattering/absorption cross sections and optical depth) and [`halo_size.pdf`](halo_size.pdf) (echo radius and annular width vs. time delay). `bbh_visualization.ipynb` implements the scattering/absorption model; `bbh_search.ipynb` implements the halo-size model to predict where to search each image.
 
 ### Why X-ray halos?
 
@@ -61,6 +66,30 @@ The ratio τ_scatter / τ_absorption ≈ 0.35·E_keV², so energies ≥ 2 keV ar
  
 eROSITA conducted four consecutive all-sky X-ray surveys (eRASS1–eRASS4) between December 2019 and December 2021, scanning the entire sky every ~6 months. Its scan geometry (spin axis pointing toward the Sun, advancing ~1°/day in ecliptic longitude) makes observation times predictable for any sky position. This notebook computes those times to identify which BBH overlap regions were observed by eROSITA after their GW events were detected.
 
+### How big is the echo, and how wide is the ring? (used by `bbh_search.ipynb`)
+
+A dust-scattering echo traces out the locus of equal light-travel-time delay between the direct (unscattered) path and the scattered path — a paraboloid for a source effectively at infinity. Its angular radius θ grows with the time delay Δt since the unscattered light arrived and shrinks with the distance *d* to the scattering dust (`halo_size.pdf` eq. 2):
+
+```
+θ ≈ 0.49° × (d / 8500 pc)^(-1/2) × (Δt / 1 yr)^(1/2)
+```
+
+8500 pc (the distance to the Galactic Center) is used as the default assumed scattering-dust distance, since most contributing dust along a BBH sightline lies near the Galactic Plane. This is `predicted_theta_arcmin()` in `bbh_search.ipynb`, driven by each event's GW-to-eROSITA-observation time delay Δt (`parse_relative_time_to_days`).
+
+The ring is not infinitely thin. Its dominant width contribution is the finite angular spread of the scattering probability distribution around θ, which is approximately Gaussian with characteristic width (Mauche & Gorenstein 1986, via `halo_size.pdf` eq. in "Halo Annular Width"):
+
+```
+σ ≈ 10.4 arcmin / (a / 0.1 μm) / (E / 1 keV)
+```
+
+for dust grain radius `a` and photon energy `E`. The angle Δθ past θ at which the scattering probability has dropped to 1/10 of its peak — used as the outer edge of the search annulus — is (`halo_size.pdf` eq. 5, `annulus_width_arcmin()` in code):
+
+```
+Δθ ≈ ln(10) · σ² / θ
+```
+
+Exposure-length and telescope-resolution (~15″ for eROSITA) contributions to the width are both much smaller than this term for the timescales/distances relevant here, so they're not separately modeled.
+
 ---
 
 ## Data
@@ -73,6 +102,8 @@ eROSITA conducted four consecutive all-sky X-ray surveys (eRASS1–eRASS4) betwe
 | SFD dust map* | [Schlegel, Finkbeiner & Davis 1998](https://iopscience.iop.org/article/10.1086/305772) | E(B-V) reddening — used only for qualitative background plots, not quantitative analysis |
 | eROSITA survey windows | Coutinho et al. (2022) | eRASS1–4 start/end dates used in scan timing model |
 | MAXI J1348–630 | [Mastroserio et al. 2021, A&A 646, A83](https://www.aanda.org/articles/aa/full_html/2021/03/aa39757-20/aa39757-20.html) | Validation source: known eROSITA dust-scattering halo at ~3.8 kpc |
+| eROSITA DR1 skytile images | [eROSITA DR1 archive](https://erosita.mpe.mpg.de/dr1/) — `EXP_010` product, band `024` (0.2–2.3 keV) | 3240×3240 px images (4″/pixel) for individual sky tiles; downloaded on demand into `skytiles/{event_name}/` by `bbh_search.ipynb` |
+| eROSITA skytile lookup | `SKYMAPS_052022_MPE.fits` table + [skytile search API](https://erosita.mpe.mpg.de/dr1/erodat/skyview/skytile_search_api/) | Authoritative tile IDs (`srvmap`) and true tile centers, used to find which tiles overlap a given boundary polygon and to build download URLs |
  
 *SFD dust map is optional.
  
@@ -83,6 +114,8 @@ eROSITA conducted four consecutive all-sky X-ray surveys (eRASS1–eRASS4) betwe
 ## Requirements
 
 ### Python packages
+
+`bbh_visualization.ipynb`:
 
 ```
 numpy
@@ -100,19 +133,33 @@ os        (standard library)
 time      (standard library)
 ```
 
+`bbh_search.ipynb` (additionally):
+
+```
+scipy       (fftconvolve, gaussian_filter, maximum_filter, binary_erosion)
+Pillow      (PIL — image export/annotation for candidate plots)
+requests    (eROSITA skytile search API + FITS download)
+astropy     (FITS I/O, WCS)
+pickle      (standard library — save/load search results)
+gzip        (standard library — decompress .fits.gz skytile images)
+multiprocessing  (standard library — parallel per-tile search)
+csv, re, os, time, shutil, tempfile, gc  (standard library)
+```
+
 Install non-standard packages with:
  
 ```bash
-pip install numpy healpy matplotlib requests astropy ligo.skymap dustmaps pandas
+pip install numpy healpy matplotlib requests astropy ligo.skymap dustmaps pandas scipy Pillow
 ```
 
-### External data file
+### External data files
 
-Download `NHI_HPX.fits` from the [HI4PI survey data release](https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/594/A116). Place it in the same directory as the notebook.
+- **`NHI_HPX.fits`** — download from the [HI4PI survey data release](https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/594/A116). Place it in the same directory as the notebook. Required by `bbh_visualization.ipynb`.
+- **`skytiles/SKYMAPS_052022_MPE.fits`** — the eROSITA DR1 skytile lookup table (authoritative tile IDs/centers). Required by `bbh_search.ipynb` before downloading or searching any tile images.
 
 ---
 
-## How to Run
+## How to Run — `bbh_visualization.ipynb`
 
 Every cell is labeled with a run condition comment. The three categories are:
  
@@ -162,6 +209,43 @@ Cell 1.1 → Cell 1.2 → skymap_files listing → Cell 6.1 → Cell 6.2 → Cel
 
 ---
 
+## Pipeline & How to Run — `bbh_search.ipynb`
+
+**Goal:** search archival eROSITA skytiles covering each event's boundary polygon (produced by `bbh_visualization.ipynb`, Step 12) for a dust-scattering echo.
+
+**Pipeline:**
+
+1. **Tile discovery** — sample a grid of points inside each event's boundary polygon (`sample_grid_inside_polygon`, `step_deg=1.5`, smaller than the ~3.6° skytile size so no tile is skipped) and query the eROSITA skytile-search API per point (`find_skytiles_at_point`) to build the set of tiles overlapping the region (`find_all_skytiles_for_event`). A `margin_deg` buffer expands the polygon outward first (`expand_polygon`) so tiles near the boundary aren't missed.
+2. **Image retrieval** — resolve each candidate tile's true ID/center against the authoritative `SKYMAPS_052022_MPE.fits` table (`find_real_srvmap`, since the search API's own `ra_cen`/`de_cen` can be off by up to ~1.8°), then download its `EXP_010` image product (3240×3240 px, 4″/pixel, band 024 = 0.2–2.3 keV) into `skytiles/{event_name}/` (`download_all_skytiles` / `download_skytile_image`), verifying the WCS against the expected tile center (`_verify_wcs_matches_tile`).
+3. **Predicted ring geometry** — for each event, convert its mean GW-to-observation time delay (`parse_relative_time_to_days`, `mean_dt_days_for_event`) into a predicted echo radius and annulus width using the dust-scattering geometry above (`predicted_theta_arcmin`, `annulus_width_arcmin`, `search_radius_window_arcmin`).
+4. **Detection (`photon_annulus_search`)** — crop each tile to the (margin-expanded) polygon (`crop_to_polygon`); for each radius step across the predicted ±10% window (`UNCERTAINTY_FRAC`), build a ring-shaped kernel sized to that radius's physical annulus width and convolve it with the masked image via FFT (`scipy.signal.fftconvolve`) to get a per-pixel summed-photon-count map at every possible center simultaneously. This directly sums raw photon counts in the ring rather than relying on image gradients/edges, which suits eROSITA's sparse, often single-photon-dominated data. Local maxima above `vote_threshold_frac` (default 0.6) of that radius layer's own peak are kept as raw candidates (`scipy.ndimage.maximum_filter`), with `MAX_RAW_CANDIDATES_PER_RADIUS` as a hard safety cap against flat count plateaus.
+5. **Non-max suppression** — candidates from every tested radius (and, in `run_one_search_per_event`, every tile) are merged and collapsed with a greedy NMS pass (`non_max_suppress_circles` / `non_max_suppress_arcmin_results`): the highest-count candidate in each (center, radius) cluster is kept, everything within `center_dist_px`/`radius_dist_px` of it is dropped, repeated until none remain.
+6. **Export & inspection** — results are pickled (`save_results`/`load_results`) and exported to CSV with per-candidate photon counts summed over the full predicted annulus, not just the fitted circle (`export_candidates_to_csv`, via `count_photons_in_annulus`). `plot_candidate`/`plot_top_candidates`/`plot_one_tile_fullres`/`plot_all_tiles_mosaic` render candidates over their tile(s); `diagnose_event` walks a zero-candidate event through each pipeline stage to show where it bottomed out.
+7. **Validation** — the pipeline is calibrated against MAXI J1348–630, a source with a known, previously-published 34–47 arcmin dust-scattering ring (eRASS1: ~34–40′, eRASS2: ~40–47′), by directly reproducing its radial photon profile and running the same search on its own eROSITA tile.
+
+> **Note on method history:** an earlier version of this pipeline (`run_halo_search`, retired but left in the notebook, commented out) used a gradient-based edge map (`simple_edge_map`) followed by a circular Hough transform (`circular_hough_transform`) instead of direct photon counting. Both `simple_edge_map` and `circular_hough_transform` are still used directly by `diagnose_event` and the MAXI J1348–630 validation cell. See `HALO_DETECTION_NOTES.md` for the Hough-transform detection logic and an open question about false-positive rejection for diffuse/random scatter that has not yet been re-evaluated for the current photon-counting method.
+
+**Minimum sequence for a fresh session (tiles already downloaded):**
+
+```
+Step 4/5 cells (imports, constants, expand_polygon, tile lookup) → Step 6 cell (photon_annulus_search, NMS)
+→ Step 9/10 cells (plotting helpers, run_one_search_per_event) → run_one_search_per_event(...) → save_results(...)
+```
+
+**Full sequence including tile download (first run for a new event set):**
+
+```
+Steps 1–2 (tile discovery + skytile table lookup) → Step 5 (download_all_skytiles)
+→ Step 6 (photon_annulus_search + NMS) → Step 9 (run_one_search_per_event) → Step 10 (save_results)
+→ Step 11 (count_photons_in_annulus / export_candidates_to_csv)
+```
+
+Downloads and searches are both resumable/idempotent: `download_all_skytiles` skips tiles already saved to disk (verifying with `_verify_fits`/`_verify_wcs_matches_tile` first), and `run_one_search_per_event` only reads local files — it never re-downloads.
+
+`run_one_search_per_event` parallelizes across tiles with `multiprocessing.Pool` (`n_workers`, default `cpu_count() - 1`); pass `n_workers=1` to run single-process for debugging or to avoid pickling issues in some notebook environments.
+
+---
+
 ## Outputs
 
 After a full run, the following files are created:
@@ -208,6 +292,33 @@ x-rays E = {E}keV/
         Validation plot: MAXI J1348–630 and its eROSITA halo annuli on the probability mask.
 ```
 
+`bbh_search.ipynb` additionally produces:
+
+```
+skytiles/
+    SKYMAPS_052022_MPE.fits
+        Authoritative eROSITA DR1 tile lookup table (must be downloaded manually first).
+    {event_name}/
+        srvmap_{NNNNNN}.fits.gz
+            One EXP_010 image per eROSITA tile overlapping that event's boundary polygon.
+
+results.pkl  (or results_smoothed_sigma{N}px.pkl / a custom path, e.g. results_new.pkl)
+    Pickled {event_name: {"dt_days", "theta_window_arcmin", "tiles", "candidates", ...}}
+    dict from run_one_search_per_event() — the full search output, reloadable via load_results().
+
+{candidates}.csv  (export_candidates_to_csv)
+    event_name, blob_id, srvmap, ra_deg, dec_deg, radius_arcmin, radius_arcsec, votes,
+    predicted_theta_arcmin, annulus_inner_arcmin, annulus_outer_arcmin,
+    photon_count_in_annulus, n_pixels_in_annulus — one row per surviving candidate.
+
+vote_counts.csv  (export_vote_counts)
+    Per-event vote-count distributions, for inspecting how cleanly candidates separate from background.
+
+Candidate plots (plot_candidate / plot_top_candidates / plot_one_tile_fullres / plot_all_tiles_mosaic,
+and *_smoothed variants):
+    Full-resolution or mosaicked tile images with candidate ring(s) and the GW boundary polygon overlaid.
+```
+
 ---
 
 ## Key Results
@@ -217,9 +328,8 @@ x-rays E = {E}keV/
 | Total GW events fetched | 391 |
 | BBH events (both masses > 3 M☉) | 273 |
 | BBH events with published skymaps | 167 |
----
 
-## Coordinate System Notes
+---
 
 ## Coordinate System Notes
  
@@ -238,14 +348,18 @@ All maps are resampled to NSIDE=1024 (pixel area ≈ 11.8 arcmin²) before any p
 
 ## References
 
- **HI4PI Collaboration 2016**, A&A 594, A116 — source of the N_H column density map.
+- **`scattering_probability.pdf`**, **`halo_size.pdf`** (this repo) — internal derivation notes for the scattering/absorption optical depth model and the echo-radius/annular-width model implemented in the two notebooks.
+- **HI4PI Collaboration 2016**, A&A 594, A116 — source of the N_H column density map.
 - **Mathis, Rumpl & Nordsieck 1977**, ApJ 217, 425 — power-law grain size distribution used for τ_scattering.
+- **Mauche & Gorenstein 1986**, ApJ 302, 371 — differential X-ray scattering cross section for dust grains and the Gaussian approximation to the scattering-angle probability distribution used for halo annular width.
 - **Morrison & McCammon 1983**, ApJ 270, 119 — photoelectric absorption cross sections for ISM gas of standard cosmic composition.
+- **Corrales 2015**, ApJ 805, 23 — Mie-theory corrections to the simple-diffraction scattering cross section approximation.
 - **Schlegel, Finkbeiner & Davis 1998**, ApJ 500, 525 — SFD dust map used for visual reference only.
 - **GWOSC** — Gravitational-Wave Open Science Center, https://gwosc.org — source of all GW event data and skymaps.
 - **GWTC-1, GWTC-2.1, GWTC-3, GWTC-4.0** — the four GW transient catalogs covering O1–O4a.
-- **Coutinho et al. 2022**, Proc. SPIE 12181, 2628946 — source of eROSITA eRASS1–4 survey window dates. https://doi.org/10.1117/12.2628946 — source of eROSITA eRASS1–4 survey window dates. 
-- **Mastroserio et al. 2021**, A&A 646, A83 — eROSITA detection of dust-scattering halo around MAXI J1348–630; used as validation source.
+- **Coutinho et al. 2022**, Proc. SPIE 12181, 2628946 — source of eROSITA eRASS1–4 survey window dates. https://doi.org/10.1117/12.2628946
+- **Mastroserio et al. 2021**, A&A 646, A83 — eROSITA detection of dust-scattering halo around MAXI J1348–630; used as validation source for both the overlap-probability mask and the ring-search pipeline.
+- **eROSITA DR1** — https://erosita.mpe.mpg.de/dr1/ — source of skytile images (`EXP_010` product) and the `SKYMAPS_052022_MPE.fits` tile lookup table used by `bbh_search.ipynb`.
 
 ---
 
@@ -253,5 +367,7 @@ All maps are resampled to NSIDE=1024 (pixel area ≈ 11.8 arcmin²) before any p
 
 - Extend to GWTC-5.0 events as they are released
 - Incorporate a more detailed grain size distribution or composition model
+- Add an automated significance test for `bbh_search.ipynb` candidates (e.g. Poisson comparison of counts in the predicted annulus vs. a similar-area background region) — currently, a candidate only has to rank in the top `vote_threshold_frac` of its own tile's peak count, with no absolute/background-subtracted significance check; see `HALO_DETECTION_NOTES.md` for the open question this leaves about diffuse/random scatter being reported as a false detection
+- Re-run the full `run_one_search_per_event` pipeline (currently interrupted mid-run per the notebook's saved outputs) across all filtered high-priority events and cross-check candidates against the MAXI J1348–630 calibration
 
 Created by Zoey Zhu zyz2000 June 2026
