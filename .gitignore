@@ -1,6 +1,7 @@
 # Downloaded skymap files
 *.fits
 *.fits.gz
+*.fits.tar.gz
 
 # Dust map data
 dustmaps/
